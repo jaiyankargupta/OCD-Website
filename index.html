@@ -4,16 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add languages bar</title>
+
     <title>OCD Society</title>
     <link rel="icon" type="image/x-icon" href="ocdlogo.png">
+
 
     <!-- Link the CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
+<body>
 
 <body class="light-mode">
 
     <!-- dark mode toggle button -->
+
 
 
     <!-- Pop-up Section Start -->
@@ -29,6 +35,22 @@
     <!-- Header Section-->
     <header>
         <div class="header-content">
+
+            <input type="text" placeholder="Search" class="search-bar"><br>
+
+            <!-- Add language bar start -->
+            <div id="google_translate_element"></div>
+            <script>
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                }
+            </script>
+            <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            <!-- add language bar ends-->
+             
+        </div>
+    </header>
+
             <div class="logo-div">
                 <img class='logo' src="ocdlogo.png">
             </div>
@@ -55,20 +77,37 @@
     </div>
 
 
+
     <!-- Your existing body content -->
     <div class="body-content">
         <h1>OCD Society NIT KKR</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit optio ex ea quidem officia, at corrupti in
-            eos accusamus nisi blanditiis tempore voluptas, explicabo architecto reprehenderit! Perferendis labore
-            accusamus saepe?</p>
+        <div class="content-container">
+            <div class="heropara">
+                <p>The Open Code Developers (OCD) society at NIT Kurukshetra is an enthusiastic technical club that
+                    aims to boost the coding and problem-solving abilities of its members.
+                    OCD focuses on competitive programming, data structures and algorithms (DSA), and project building.
+                    It offers a team-based platform for students to improve their technical know-how. 
+                    The group often holds coding contests, hackathons, and workshops. 
+                    These events spark creativity and push participants to excel.
+                    By taking part in these activities, members hone their coding skills and get ready for
+                    various national and international contests. OCD strives to build a lively community where
+                    up-and-coming developers can grow, share ideas, and work on meaningful projects.
+                    This approach helps members develop personally and advances the college's tech prowess.</p>
+            </div>
+            <div class="img-container">
+                <img src="4pic1.jpeg" alt="Img1">
+                <img src="4pic2.png" alt="Img2">
+                <img src="4pic3.jpg" alt="Img3">
+                <img src="4pic4.jpg" alt="Img4">
+            </div>
+        </div>
     </div>
-
+    
     <!-- Footer Section -->
     <footer class="sticky-footer">
         <div class="footer-content">
             <h3>OCD Society NIT KKR</h3>
             <p>Fostering innovation and collaboration among the coding enthusiasts of NIT Kurukshetra.</p>
-
 
             <!-- Contact Form -->
             <div class="contact-form">
@@ -90,9 +129,14 @@
                         <label for="contact">Contact Number:</label>
                         <input type="tel" id="contact" name="contact">
                     </div>
-                    <button class="button" type="submit">Submit</button>
+
+                    <button class="button" id="formbtn" type="submit">Submit</button>
                     <p id="messageSubmit" style="display:none;">Thank You</p>
                 </form>
+
+        <!-- suggestion box -->
+        <div class="suggestion"><a href="./suggestion.html">Help Us To Improve</a></div>
+
         <div class="footer-bottom">
             <p>&copy; 2024 OCD Society NIT KKR. All Rights Reserved.</p>
         </div>

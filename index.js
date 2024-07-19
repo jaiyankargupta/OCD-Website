@@ -58,4 +58,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
-});
+
+const storebtn=document.getElementById("formbtn");
+storebtn.addEventListener("click",()=>{
+    const name=document.getElementById("name").value;
+    const email=document.getElementById("email").value;
+    const message=document.getElementById("message").value;
+    const contactnumber=document.getElementById("contact").value;
+    localStorage.setItem("name",name);
+    localStorage.setItem("email",email);
+    localStorage.setItem("message",message);
+    localStorage.setItem("contact",contactnumber);
+})
+  });
+

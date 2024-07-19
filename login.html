@@ -68,13 +68,21 @@ button {
     color: #f5ee62;
   }
 }
+#captcha {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+}
     </style>
 </head>
 <body>
     <section class="container">
         <h1<font size="7" type="comic sans MS" COLOR="white"><b> Welcome to OCD </b></font></h1>
         
-    <form action="index.html">
+    <form id="loginForm"action="index.html">
         <fieldset>
     
         
@@ -89,17 +97,55 @@ button {
         <label for="password">Password : </label>
         <input  type="text" id="password" name="password">
         <br>
-        <br/>
+        <br>
         <label for="datepicker">Date of Birth : </label>
         <input type="date" id="datepicker" name="datepicker">
-        <br/>
+        <br>
+        <br>
+        <div class="captcha-container" >
+        <span id="captcha" style="background-color: white;color: black;"></span>
+        <button type="button" id="refreshCaptcha">Refresh</button>
+        </div>
+        <div class="input-group">
+        <label for="captchaInput">Enter CAPTCHA:</label>
+        <input type="text" id="captchaInput" name="captchaInput" required>
+      </div>
         <button >Submit</button>
         <br>
-        <br/>
-    
-    
+        <br>
     </form>
 </fieldset>
 </section>
+<script>
+   function generateCaptcha() {
+            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            let captcha = '';
+            for (let i = 0; i < 6; i++) {
+                captcha += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            document.getElementById('captcha').textContent = captcha;
+        }
+
+        document.getElementById('refreshCaptcha').addEventListener('click', generateCaptcha);
+
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const enteredCaptcha = document.getElementById('captchaInput').value;
+            const generatedCaptcha = document.getElementById('captcha').textContent;
+
+            if (enteredCaptcha === generatedCaptcha) {
+                alert('Login successful! Redirecting to the main website...');
+                // Here you would typically redirect to your main website
+                // window.location.href = 'your-main-website-url';
+            } else {
+                alert('CAPTCHA verification failed. Please try again.');
+                generateCaptcha();
+                document.getElementById('captchaInput').value = '';
+            }
+        });
+
+        // Generate initial CAPTCHA when the page loads
+        generateCaptcha();
+</script>
 </body>
 </html>

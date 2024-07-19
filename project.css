@@ -1,0 +1,69 @@
+:root{
+    --primary:#051c67;
+    --dark:#161616;
+    --pure:#ffffff;
+    --ternary:#898989;
+    --light:#F2F2F2;
+    --secondary:#070606;
+    --PRIMA:#27b3d6;
+}
+body{
+    background: var(--primary);
+}
+section.project{
+    background:var(--primary);
+    clip-path:polygon(0 0, 100% 0, 100% 100%, 67% 90%, 0 100%);
+    padding-bottom:12rem;
+}
+section.project .section-heading{
+    color:var(--pure);
+    text-align: center;
+    justify-content: center;
+}
+section.project .card-wrapper{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:3rem;
+}
+section.project .card-wrapper .card{
+    background:var(--pure);
+    box-shadow: rgb(163, 167, 171) 20px 20px 25px -10px;
+    border-radius: 20px;
+}
+section.project .card-wrapper .card .img-wrapper img{
+    width:100%;
+    height:45%;
+    object-fit:cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+section.project .card-wrapper .card .card-content{
+    text-align: center;
+    padding:1rem;
+    padding-left:2rem;
+    padding-right:2rem;
+}
+section.project .card-wrapper .card .card-content h1{
+    font-size:1rem;
+    font-weight:600;
+}
+section.project .card-wrapper .card .card-content a{
+    color:var(--secondary);
+    text-decoration: none;
+}
+section.project .card-wrapper .card .card-content a:hover{
+    color:var(--PRIMA);
+}
+section.project .card-wrapper .card .card-content span{
+   color:var(--ternary);
+   font-size:0.8rem; 
+}
+section.project .card-wrapper .card .card-content p{
+    font-family:'Lato', sans-serif;
+    color:var(--ternary);
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+section.project .card-wrapper .card .card-content a.read-more{
+    font-size:0.8rem;
+}
