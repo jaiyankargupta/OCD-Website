@@ -1,3 +1,27 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #fff;
+    padding: 10px 0;
+    margin: 20px;
+}
+
+.search-bar {
+    float: right;
+}
+
+/* Body Styles */
+.body-content {
+    padding: 10px 0;
+    margin: 20px;
+}
+
 /* Footer Styles */
 footer {
     background-color: #222;
@@ -50,7 +74,7 @@ footer {
     font-weight: bold;
 }
 
-.form-group input {
+.form-group input, .form-group textarea {
     width: 100%;
     padding: 8px;
     border: 1px solid #ddd;
@@ -82,3 +106,37 @@ button:hover {
     margin: 0;
     font-size: 14px;
 }
+
+/* Social Media Buttons Styles */
+.social-media-buttons {
+    margin: 20px 0;
+}
+
+.social-media-buttons h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.social-media-buttons a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #444;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.social-media-buttons a:hover {
+    background-color: #646565;
+}
+
+.social-media-buttons i {
+    margin-right: 5px;
+}
+
+.fa-instagram { color: #E1306C; }
+.fa-linkedin { color: #0077B5; }
+.fa-youtube { color: #FF0000;}
