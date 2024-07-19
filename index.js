@@ -32,23 +32,31 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('DOMContentLoaded', () => {
     
-    const toggleButton = document.getElementById('dark-mode-toggle');
+    // const toggleButton = document.getElementById('dark-mode-toggle');
 
 
-    let Count = 0;
+    // let Count = 0;
 
     
-    toggleButton.addEventListener('click', () => {
+    // toggleButton.addEventListener('click', () => {
        
-        Count++;
+    //     Count++;
 
-        if (Count % 2 === 0) {
-            document.body.className = 'light-mode';
-            toggleButton.textContent = 'Dark Mode';
-        } else {
-            document.body.className = 'dark-mode';
-            toggleButton.textContent = 'Light Mode';
-        }
+    //     if (Count % 2 === 0) {
+    //         document.body.className = 'light-mode';
+    //         toggleButton.textContent = 'Dark Mode';
+    //     } else {
+    //         document.body.className = 'dark-mode';
+    //         toggleButton.textContent = 'Light Mode';
+    //     }
+    // });
+    const toggleButton = document.getElementById('dark-mode-toggle');
+    let isDarkMode = false; // Track the current mode
+
+    toggleButton.addEventListener('click', () => {
+        isDarkMode = !isDarkMode;
+        document.body.className = isDarkMode ? 'dark-mode' : 'light-mode';
+        toggleButton.textContent = isDarkMode ? 'Light Mode' : 'Dark Mode';
     });
 });
 
@@ -63,4 +71,15 @@ storebtn.addEventListener("click",()=>{
     localStorage.setItem("email",email);
     localStorage.setItem("message",message);
     localStorage.setItem("contact",contactnumber);
-})
+});
+
+// responsive navbar
+document.addEventListener('DOMContentLoaded', function() {
+    // Navbar Toggle for Mobile
+    const navToggle = document.getElementById('nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+});

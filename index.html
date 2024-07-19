@@ -33,12 +33,22 @@
     </div>
     <!-- Pop-up Section end  -->
     <!-- Header Section-->
+     <!-- Responsive navbar starts -->
     <header>
         <div class="header-content">
-
-            <input type="text" placeholder="Search" class="search-bar"><br>
-
-            <!-- Add language bar start -->
+            <img class="logo" src="ocdlogo.png" alt="OCD Society Logo">
+            <nav id="nav-links" class="nav-links">
+                <a href="#">EVENTS</a>
+                <a href="#">ABOUT</a>
+                <a href="#">TEAM</a>
+                <a href="ContactUs.html">CONTACT US</a>
+            </nav>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <input type="text" placeholder="Search" class="search-bar">
             <div id="google_translate_element"></div>
             <script>
                 function googleTranslateElementInit() {
@@ -46,31 +56,10 @@
                 }
             </script>
             <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-            <!-- add language bar ends-->
-             
-        </div>
+            </div>
     </header>
-
-            <div class="logo-div">
-                <img class='logo' src="ocdlogo.png">
-            </div>
-            <div class="header-text">
-                <h3>EVENTS</h3>
-            </div>
-            <div class="header-text">
-                <h3>ABOUT</h3>
-            </div>
-            <div class="header-text">
-                <h3>TEAM</h3>
-            </div>
-            <div class="header-text">
-                <h3><a href="ContactUs.html">CONTACT US</a></h3>
-            </div>
-           
-            <div class="emptydiv"></div>
-            <input type="text" placeholder="Search" class="search-bar">
-        </div>
-    </header>
+    <!-- responsive navbar ends -->
+     
      <!-- dark mode toggle button -->
      <div align="right">
         <button id="dark-mode-toggle" class="button">Dark Mode</button>
