@@ -43,7 +43,7 @@ body{
     height: 25px;
     background-color: rgb(255, 255, 255);
 
-
+}
 /* Body Styles */
 body{
     min-height: 100vh;
@@ -55,11 +55,65 @@ body{
    
 }
 
+
+
+/* Team Members */
+
+.teamleads{
+    height: 310px;
+}
+
+.wrapper{
+    margin: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.holders{
+    width: 100%;
+    text-align: center;
+    font-weight: 900;
+    font-size:23px;
+}
+
+
+.members {
+    height: 250px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black; 
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+.members:hover{
+    transform: scale(1.1);
+}
+.members img{
+    height: 170px;
+    width: 150px;
+    object-fit: cover;
+}
+ 
+
+.members p{
+    text-align: center;
+    margin: 2px 0;
+    font-size: 17px;
+}
+
+
 /* Footer Styles */
 .sticky-footer{
     position: sticky;
     top: 100%;
 }
+ 
+
+
 footer {
     background-color: #222;
     color: #fff;
