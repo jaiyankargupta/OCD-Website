@@ -14,13 +14,12 @@
     <div id="popup-banner" class="popup-banner">
         <div class="popup-content">
             <span id="close-btn" class="close-btn">&times;</span>
-            <h2>Welcome to OCD Website !</h2>
+            <h2>Welcome too to OCD Website !</h2>
             <p>We are  currently working on DSA, Competitive Programming, and a 30 Days Java challenge. Join us and enhance your coding skills!</p>
         </div>
     </div>
-    <!-- Pop-up Section end  -->
     <!-- Header Section-->
-     <header>
+     <!-- <header>
         <div class = "header-content">
             <div class="logo-div">
                 <img class='logo'src="ocdlogo.png">
@@ -40,51 +39,82 @@
             <div class="emptydiv"></div>
             <input type="text" placeholder="Search" class="search-bar">
         </div>
-     </header>
+     </header> -->
+     <section id="header">
+        <a href="#"><img src="ocdlogo.png" class="logo" alt="" style="width: 60px;height: 60px;"></a>
+        <div>
+            <ul id="navbar">
+               <li><a class="active" href="index.html">Home</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="contact.html">Contact</a></li>
+               <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+    </section>
+     <!-- main content of the site -->
+      <section id="mainBody">
+            <main style="min-height: 75vh;">
+                
+                <h1>OCD Society NIT KKR</h1>
+                section for main content of home page
+                
+              </main>
+      </section>
 
+   
 
-    <!-- Your existing body content -->
-     <div class="body-content">
-        <h1>OCD Society NIT KKR</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit optio ex ea quidem officia, at corrupti in eos accusamus nisi blanditiis tempore voluptas, explicabo architecto reprehenderit! Perferendis labore accusamus saepe?</p>
-     </div>
+   
+    <!-- contact and review -->
+    <section id="newsletter" class="section-p1" class="section-m1">
+        <div class="newstext">
+           <h4>Get Update Of OpenCode Society</h4> 
+           <p>Get E-mail updates about our latest Coding Contest and <span>Hackathons</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="white">Sign Up</button>
+        </div>
+    </section>
 
     <!-- Footer Section -->
-    <footer class="sticky-footer">
-        <div class="footer-content">
-            <h3>OCD Society NIT KKR</h3>
-            <p>Fostering innovation and collaboration among the coding enthusiasts of NIT Kurukshetra.</p>
-            
-            
-            <!-- Contact Form -->
-            <div class="contact-form">
-                <h4>Contact Us</h4>
-                <form action="#" method="post" id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message:</label>
-                        <textarea name="message" id="message" cols="30" rows="10" required></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="contact">Contact Number:</label>
-                        <input type="tel" id="contact" name="contact">
-                    </div>
-                    <button class="button" "submit">Submit</button>
-                </form>
-            </div>
-            <div id="formResponse" style="display:none;">Thank you for your message!</div>
+    <footer class="section-p1">
+        <div class="col">
+            <section id="form-details" class="section-p1" style="width:100%;">
+                <form action="">
+                    <span>LEAVE A MESSAGE</span>
+                    <input type="text" placeholder="Your Name" style="width:100%;">
+                    <input type="email" placeholder="E-mail" style="width:100%;">
+                    <input type="text" placeholder="Subject" style="width:100%;">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" style="width:100%;"></textarea>
+                    <button class="normal">submit</button>
+                   </form>
+            </section>
+       </div>
+        <div class="col">
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <a href="#"> facebook icon</a><br>
+                    <a href="#"> github icon</a><br>
+                    <a href="#"> instagram icon</a><br>
+                    <a href="#"> Twitter icon</a><br>
+                </div>
+            </div> 
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 OCD Society NIT KKR. All Rights Reserved.</p>
+        <div class="col">
+            <h4>About Us</h4>
+            <a href="#">About us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            
         </div>
-    </footer>
+        
+        <div class="copyright">
+           <p> &#169 OpenConde Developer Society has copyright </p> 
+        </div>
+    </footer>    
+     
+  
 
     <!-- Font Awesome CDN for social icons -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
