@@ -1,124 +1,86 @@
 /* Navbar Styles */
-body{
+
+body {
     margin: 0;
-    
 }
 
-.header-content
-{
-    margin-top:-20px;
-    height:40px;
-    width:auto;
-    margin-left:-15px;
-    margin-right:-15px;
+p {
+    align-items: center;
+}
+
+.header-content {
+    margin-top: 5px;
+    height: 40px;
+    width: auto;
+    margin-left: -15px;
+    margin-right: -15px;
     background-color: #7cabde;
-    border:2px solid rgb(2, 2, 24);
+    border: 2px solid rgb(2, 2, 24);
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.logo
-{
-    height:40px;
-    width:40px;
+.logo {
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
     margin-left: 20px;
     margin-top: 5px;
 }
 
-.header-text
-{
-    color:#0c2e53
-}
-.emptydiv
-{
-    width:300px;
+.header-text {
+    color: #0c2e53
 }
 
-.search-bar{
-    width:300px;
-    margin-right:20px;
+.emptydiv {
+    width: 300px;
+}
+
+.search-bar {
+    width: 300px;
+    margin-right: 20px;
     height: 25px;
     background-color: rgb(255, 255, 255);
+}
 
 }
 /* Body Styles */
-body{
+
+body {
     min-height: 100vh;
     margin-bottom: -5px;
 }
-.body-content{
+
+.body-content {
     padding: 10px 0 0 0;
     margin: 20px 20px 0 20px;
-   
 }
 
-
-
-/* Team Members */
-
-.teamleads{
-    height: 310px;
+body.light-mode {
+    background-color: #fff;
+    color: #000;
 }
 
-.wrapper{
-    margin: 15px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+body.dark-mode {
+    background-color: #222222;
+    color: #fff;
 }
-
-.holders{
-    width: 100%;
-    text-align: center;
-    font-weight: 900;
-    font-size:23px;
-}
-
-
-.members {
-    height: 250px;
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid black; 
-    border-radius: 4px;
-    transition: transform 0.3s ease;
-}
-.members:hover{
-    transform: scale(1.1);
-}
-.members img{
-    height: 170px;
-    width: 150px;
-    object-fit: cover;
-}
- 
-
-.members p{
-    text-align: center;
-    margin: 2px 0;
-    font-size: 17px;
-}
-
 
 /* Footer Styles */
-.sticky-footer{
+
+.sticky-footer {
     position: sticky;
     top: 100%;
 }
- 
-
-
 footer {
-    background-color: #222;
-    color: #fff;
+    border: 3px solid #0056b3;
+    border-radius: 3px;
+    background-color: inherit;
+    color: inherit;
     padding: 20px 0 0 0;
-    display:flex;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
@@ -203,13 +165,14 @@ footer {
 
 
 /* Pop-up Styles */
+
 .popup-banner {
-    display: none; 
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgb(245, 245, 220,0.5);
+    background-color: rgb(245, 245, 220, 0.5);
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -232,6 +195,55 @@ footer {
     right: 20px;
     font-size: 24px;
     cursor: pointer;
-    color:#222;
+    color: #222;
 }
+
+
 /* Pop-up style ends */
+
+
+/* About us page styles */
+
+.about-section {
+    padding: 10px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+}
+
+#About {
+    font-size: 100px;
+}
+
+.our_team {
+    font-size: larger;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 27px;
+}
+
+h2 {
+    color: rgb(72, 72, 249);
+    font-size: 50px;
+}
+
+.content {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+
+/* all changes pushed into branch */
