@@ -1,64 +1,76 @@
 /* Navbar Styles */
-body{
+body {
     margin: 0;
-    
 }
-.navbar{
+
+.navbar {
     background-color: rgb(31, 31, 31);
     color: whitesmoke;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
 }
-.navbar-list{
+
+.navbar-list {
     list-style: none;
     display: flex;
-    margin: 20px 15px 20px 15px;
-    
+    margin: 0;
+    padding: 0;
 }
-.navbaritem{
+
+.navbaritem {
     padding: 0 25px;
-    
 }
-.navbarlink{
+
+.navbarlink {
     color: whitesmoke;
     text-decoration: none;
     cursor: pointer;
 }
-.navbarlink:hover{
+
+.navbarlink:hover, .navbarlink.active {
     color: rgb(158, 157, 157);
     text-decoration: underline;
 }
-.searchbutton{
+
+.searchbutton {
     border: none;
     cursor: pointer;
 }
-.searchbutton:hover{
+
+.searchbutton:hover {
     background-color: rgb(158, 157, 157);
     color: rgb(17, 17, 17);
 }
 
 /* Body Styles */
-body{
+body {
     min-height: 100vh;
     margin-bottom: -5px;
+    padding-top: 50px; /* Adjust this to match the height of your navbar */
 }
-.body-content{
+
+.body-content {
     padding: 10px 0 0 0;
     margin: 20px 20px 0 20px;
-   
 }
 
 /* Footer Styles */
-.sticky-footer{
+.sticky-footer {
     position: sticky;
     top: 100%;
 }
+
 footer {
     background-color: #222;
     color: #fff;
     padding: 20px 0 0 0;
-    display:flex;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
@@ -141,15 +153,14 @@ footer {
     font-size: 14px;
 }
 
-
 /* Pop-up Styles */
 .popup-banner {
-    display: none; 
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgb(245, 245, 220,0.5);
+    background-color: rgb(245, 245, 220, 0.5);
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -172,6 +183,5 @@ footer {
     right: 20px;
     font-size: 24px;
     cursor: pointer;
-    color:#222;
+    color: #222;
 }
-/* Pop-up style ends */
