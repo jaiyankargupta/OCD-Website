@@ -1,6 +1,7 @@
 /* Header Styles */
 header {
-    background-color: #fff;
+    background-color:inherit;
+    transition: background-color 0.05s, color 0.05s;
     padding: 10px 0;
     margin: 20px;
 }
@@ -13,11 +14,21 @@ header {
 body{
     min-height: 100vh;
     margin-bottom: -5px;
+    transition: background-color 0.5s, color 0.4s;
 }
 .body-content{
     padding: 10px 0 0 0;
     margin: 20px 20px 0 20px;
    
+}
+body.light-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+body.dark-mode {
+    background-color: #222222;
+    color: #fff;
 }
 
 /* Footer Styles */
@@ -26,10 +37,14 @@ body{
     top: 100%;
 }
 footer {
-    background-color: #222;
-    color: #fff;
+ 
+
+    border: 3px solid #0056b3; 
+    border-radius: 3px;
+    background-color: inherit;
+    color: inherit;
     padding: 20px 0 0 0;
-    display:flex;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
