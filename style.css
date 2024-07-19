@@ -45,7 +45,7 @@ p {
     background-color: rgb(255, 255, 255);
 }
 
-
+}
 /* Body Styles */
 
 body {
@@ -68,14 +68,12 @@ body.dark-mode {
     color: #fff;
 }
 
-
 /* Footer Styles */
 
 .sticky-footer {
     position: sticky;
     top: 100%;
 }
-
 footer {
     border: 3px solid #0056b3;
     border-radius: 3px;
