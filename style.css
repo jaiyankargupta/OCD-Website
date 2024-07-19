@@ -66,13 +66,15 @@ button {
     cursor: pointer;
     font-size: 16px;
     margin-top: 10px;
+    margin-right: 1.4rem;
+    width: 7rem;
 }
 
 button:hover {
     background-color: #0056b3;
 }
 
-.footer-bottom {
+/* .footer-bottom {
     padding: 10px 0;
     border-top: 1px solid #444;
     margin-top: 20px;
@@ -81,4 +83,43 @@ button:hover {
 .footer-bottom p {
     margin: 0;
     font-size: 14px;
+} */
+.btn {
+    width: 5rem !important;
+}
+
+/* Footer Bottom */
+
+.f-info-brand a {
+    text-decoration: none;
+    color: white;
+}
+
+.f-info-brand a:hover {
+    text-decoration: underline;
+}
+
+.f-info-socials,
+.f-info-brand {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-socials a i {
+    color: white;
+    font-size: 1.3rem;
+    margin-right: 1.3rem;
+
+}
+
+.f-info {
+    text-align: center;
+    height: 4rem;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
 }
