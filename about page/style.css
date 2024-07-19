@@ -1,0 +1,40 @@
+.about-section {
+    padding: 10px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+}
+
+#About {
+    font-size: 100px;
+}
+
+.our_team {
+    font-size: larger;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 27px;
+}
+
+h2 {
+    color: rgb(72, 72, 249);
+    font-size: 50px;
+}
+
+.content {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
