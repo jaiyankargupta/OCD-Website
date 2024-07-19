@@ -21,9 +21,33 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Function to close the popup banner
-    closeBtn.addEventListener('click', function() {
+    window.addEventListener('click', function() {
         popupBanner.style.display = 'none';
     });
 
     setTimeout(showPopup, 1000);
+});
+
+// JS for dark mode toggle button
+
+document.addEventListener('DOMContentLoaded', () => {
+    
+    const toggleButton = document.getElementById('dark-mode-toggle');
+
+
+    let Count = 0;
+
+    
+    toggleButton.addEventListener('click', () => {
+       
+        Count++;
+
+        if (Count % 2 === 0) {
+            document.body.className = 'light-mode';
+            toggleButton.textContent = 'Dark Mode';
+        } else {
+            document.body.className = 'dark-mode';
+            toggleButton.textContent = 'Light Mode';
+        }
+    });
 });
