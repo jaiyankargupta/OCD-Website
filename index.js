@@ -51,3 +51,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+// Navbar toggle for mobile
+
+document.addEventListener('DOMContentLoaded', () => {
+    const navToggle = document.getElementById('nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+});
