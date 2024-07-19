@@ -3,24 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <!-- Link the CSS file -->
+    <title>OCD Society NIT KKR</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header Section-->
-     <header>
-        <div class = "header-content">
+    <header>
+        <div class="header-content">
             <input type="text" placeholder="Search" class="search-bar">
         </div>
-     </header>
+        <button class="login-button" onclick="showLoginPopup()">Login</button>
+    </header>
 
-    <!-- Your existing body content -->
-     <div class="body-content">
+    <!-- Body Content -->
+    <div class="body-content">
         <h1>OCD Society NIT KKR</h1>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit optio ex ea quidem officia, at corrupti in eos accusamus nisi blanditiis tempore voluptas, explicabo architecto reprehenderit! Perferendis labore accusamus saepe?</p>
-     </div>
+    </div>
 
     <!-- Footer Section -->
     <footer>
@@ -58,8 +57,32 @@
         </div>
     </footer>
 
-    <!-- Font Awesome CDN for social icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+    <!-- Login Pop-up -->
+    <div class="login-popup" id="loginPopup">
+        <div class="login-container">
+            <span class="close-button" onclick="hideLoginPopup()">&times;</span>
+            <h2>Login to OCD Society NIT KKR</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="captcha-container">
+                    <span id="captcha"></span>
+                    <button type="button" id="refreshCaptcha">Refresh</button>
+                </div>
+                <div class="form-group">
+                    <label for="captchaInput">Enter CAPTCHA:</label>
+                    <input type="text" id="captchaInput" name="captchaInput" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+<script src="index.js"></script>
 </body>
 </html>
