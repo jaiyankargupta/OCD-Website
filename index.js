@@ -50,4 +50,11 @@ document.addEventListener('DOMContentLoaded', () => {
             toggleButton.textContent = 'Light Mode';
         }
     });
+    var navbarLinks = document.querySelectorAll('.navbarlink');
+    navbarLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            navbarLinks.forEach(nav => nav.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
 });

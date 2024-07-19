@@ -20,6 +20,11 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
 }
 
 .logo {
