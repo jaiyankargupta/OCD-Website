@@ -118,7 +118,6 @@ function selectOption(option) {
     window.location.href = url;
 }
 
-
 /*  For smoother scrolling */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
