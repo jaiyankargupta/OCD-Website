@@ -8,6 +8,9 @@
     <title>Add languages bar</title>
 
     <title>OCD Society</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="ocdlogo.png">
 
 
@@ -20,18 +23,23 @@
 
     <!-- dark mode toggle button -->
 
-
-
-    <!-- Pop-up Section Start -->
-    <div id="popup-banner" class="popup-banner">
+     <!-- Pop-up Section Start -->
+       <div id="popup-banner" class="popup-banner">
         <div class="popup-content">
-            <span id="close-btn" class="close-btn">&times;</span>
+            <span id="close-btn-popup" class="close-btn" onclick="hidepopup()">✘</span>
             <h2>Welcome to OCD Website !</h2>
             <p>We are currently working on DSA, Competitive Programming, and a 30 Days Java challenge. Join us and
                 enhance your coding skills!</p>
+                
+                
+                <a href="#" ><button id="join-btn-popup">Join</button></a>
         </div>
     </div>
     <!-- Pop-up Section end  -->
+
+
+
+    
     <!-- Header Section-->
     <header>
         <div class="header-content">
@@ -50,7 +58,7 @@
              
         </div>
     </header>
-
+           
             <div class="logo-div">
                 <img class='logo' src="ocdlogo.png">
             </div>
@@ -70,6 +78,8 @@
             <div class="emptydiv"></div>
             <input type="text" placeholder="Search" class="search-bar">
         </div>
+        
+         
     </header>
      <!-- dark mode toggle button -->
      <div align="right">
@@ -175,7 +185,9 @@
         <div class="footer-bottom">
             <p>&copy; 2024 OCD Society NIT KKR. All Rights Reserved.</p>
         </div>
+        
     </footer>
+      
 
     <!-- Font Awesome CDN for social icons -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
