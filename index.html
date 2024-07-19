@@ -126,8 +126,18 @@
                         <textarea name="message" id="message" cols="30" rows="10" required></textarea>
                     </div>
                     <div class="form-group">
+                        <label for="countryCode">Select Country Code:</label>
+                        <select id="countryCode" name="countryCode">
+                            <option value="+91">India (+91)</option>
+                            <option value="+1">USA (+1)</option>
+                            <option value="+86">China (+86)</option>
+                            <option value="+49">Germany (+49)</option>
+                            <option value="+81">Japan (+81)</option>
+                        </select><br><br>
+                    </div>  
+                    <div class="form-group">
                         <label for="contact">Contact Number:</label>
-                        <input type="tel" id="contact" name="contact">
+                        <input type="tel" id="contact" name="contact" pattern="[0-9]{10}" required>
                     </div>
                     <button class="button" id="formbtn" type="submit">Submit</button>
                 </form>

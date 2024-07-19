@@ -9,6 +9,14 @@ contactForm.addEventListener('submit', function(event) {
     }, 2000);
 });
 
+// JS code for valid contact number
+
+var contactNumber = document.getElementById('contactNumber').value;
+    if (!/^\d{10}$/.test(contactNumber)) {
+        alert('Please enter a valid 10-digit contact number.');
+    }
+
+
 // JS code for Pop-up section 
 
 document.addEventListener('DOMContentLoaded', function() {
