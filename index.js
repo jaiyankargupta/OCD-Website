@@ -1,13 +1,20 @@
-const contactForm = document.getElementById('contactForm');
-const formResponse = document.getElementById('formResponse');
-contactForm.addEventListener('submit', function(event) {
-    event.preventDefault();
-    formResponse.style.display = 'block';
-    setTimeout(() => {
-        contactForm.reset();
-        formResponse.style.display = 'none';
-    }, 2000);
-});
+document.addEventListener('DOMContentLoaded', function () {
+    const contactForm = document.getElementById('contactForm');
+    const messageSubmit = document.getElementById('messageSubmit');
+    const submitButton = contactForm.querySelector('button[type="submit"]');
+
+    contactForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+        submitButton.style.display = 'none';
+        messageSubmit.style.display = 'block';
+
+        setTimeout(() => {
+            contactForm.reset();
+            submitButton.style.display = 'block';
+            messageSubmit.style.display = 'none';
+        }, 2000);
+    });
+
 
 // JS code for Pop-up section 
 
@@ -50,4 +57,5 @@ document.addEventListener('DOMContentLoaded', () => {
             toggleButton.textContent = 'Light Mode';
         }
     });
+});
 });
