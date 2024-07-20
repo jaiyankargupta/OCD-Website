@@ -23,7 +23,7 @@ var contactNumber = document.getElementById('contactNumber').value;
         alert('Please enter a valid 10-digit contact number.');
     }
 
-// JS code for Pop-up section 
+// JS code for Pop-up Section 
 
 document.addEventListener('DOMContentLoaded', function() {
     var popupBanner = document.getElementById("popup-banner");
