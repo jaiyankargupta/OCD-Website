@@ -6,11 +6,15 @@
     text-align: center;
     margin-top: 7rem;
     margin-bottom: 18px;
+    
 }
 
 .about-section h1 {
     font-size: 2.5rem;
     margin: 0;
+}
+.achievement{
+    border-width: 1px;
 }
 
 /* Content Section */
@@ -18,7 +22,6 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
-    background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     margin-bottom: 6rem;
@@ -26,7 +29,7 @@
 }
 
 .content h2 {
-    color: #0073e6;
+    color: #ffd620;
     margin-top: 1.5rem;
     font-size: 1.8rem;
 }
@@ -38,18 +41,16 @@
 }
 
 .content p {
-    margin-top: 0.5rem;
+    margin : 10px;
     font-size: 1rem;
     line-height: 1.6;
 }
-
 .suggestion {
     position: fixed;
     right: 10px;
     bottom: 10px;
     width: 100px;
     height: 100px;
-    background-color: #1206eb;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -58,7 +59,27 @@
 }
 
 .suggestion a {
-    color: rgb(255, 255, 255);
+    color: rgb(241, 177, 0);
     text-decoration: none;
 }
-  
+div{
+    margin : 10px;
+}
+h3{
+    color:rgb(241, 177, 0);
+    text-align: center;
+    font-style: italic;
+    font-size : 40px;
+    text-align: center;
+}
+h1{
+    font-size : 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+}
+.container{
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center;
+}
