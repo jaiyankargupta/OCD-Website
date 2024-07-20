@@ -26,8 +26,8 @@ var contactNumber = document.getElementById('contactNumber').value;
 // JS code for Pop-up section 
 
 document.addEventListener('DOMContentLoaded', function() {
-    var popupBanner = document.getElementById('popup-banner');
-    var closeBtn = document.getElementById('close-btn');
+    var popupBanner = document.getElementById("popup-banner");
+    var closeBtn = document.getElementById("close-btn");
 
     // Function to show the popup banner
     function showPopup() {
@@ -35,8 +35,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Function to close the popup banner
-    window.addEventListener('click', function() {
-        popupBanner.style.display = 'none';
+    closeBtn.addEventListener("click", function() {
+        popupBanner.style.display = "none";
     });
 
     setTimeout(showPopup, 1000);
