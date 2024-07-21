@@ -60,3 +60,53 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // JS code for Pop-up section ends here
+
+// js code for Animation 
+document.addEventListener('scroll', () => {
+  const sections = document.querySelectorAll('.programs-section');
+  const scrollPosition = window.scrollY + window.innerHeight;
+
+  sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+
+      if (scrollPosition > sectionTop + sectionHeight / 4) {
+          section.classList.remove('hidden');
+      } else {
+          section.classList.add('hidden');
+      }
+  });
+});
+
+document.addEventListener('scroll', () => {
+  const sections = document.querySelectorAll('.team-section');
+  const scrollPosition = window.scrollY + window.innerHeight;
+
+  sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+
+      if (scrollPosition > sectionTop + sectionHeight / 4) {
+          section.classList.remove('hidden');
+      } else {
+          section.classList.add('hidden');
+      }
+  });
+});
+
+//for left to right slide effect
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
+
