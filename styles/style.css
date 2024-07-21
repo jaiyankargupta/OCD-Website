@@ -71,6 +71,14 @@ nav {
     border-radius: 5px;
 }
 
+.search-button {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 70px;
+    height: 31px;
+    cursor: pointer;
+}
+
 .dark-mode-button {
     padding: 10px;
     border: none;
@@ -96,7 +104,6 @@ nav {
 
 /* Light Mode Styles */
 body.light-mode  {
-    background-color: #fff; 
     color: #000000; 
 }
 
@@ -108,15 +115,12 @@ body.dark-mode {
 
 body.dark-mode .hero-section,
 body.dark-mode nav,
-body.dark-mode .team-section,
-body.dark-mode .team-card {
+body.dark-mode .team-section {
     background-color: #333;
     color: #ffffff;
 }
 
-body.dark-mode .nav-text a,
-body.dark-mode .team-info h3,
-body.dark-mode .team-info .role {
+body.dark-mode .nav-text a {
     color: #ffffff;
 }
 
@@ -379,7 +383,6 @@ body.dark-mode .dark-mode-button .fa-sun {
 
 /* Team Section Styles */
 .team-section {
-    background-color: #ffffff;
     padding: 50px 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -403,7 +406,8 @@ body.dark-mode .dark-mode-button .fa-sun {
 }
 
 .team-card {
-    background: #ffffff;
+    background-color: white;
+    color:#000000 ;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
