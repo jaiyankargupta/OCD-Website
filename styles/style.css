@@ -6,7 +6,6 @@
 }
 
 /* Navbar Styles */
-
 nav {
     background-color: #fcfafa;
     padding: 10px 20px;
@@ -96,7 +95,7 @@ nav {
 }
 
 /* Light Mode Styles */
-body.light-mode  {
+body.light-mode {
     background-color: #fff; 
     color: #000000; 
 }
@@ -107,7 +106,6 @@ body.dark-mode {
     color: #ffffff; 
 }
 
-/* ADD THESE NEW STYLES */
 /* Ensure dark mode affects all major sections */
 body.dark-mode .hero-section,
 body.dark-mode nav,
@@ -138,20 +136,20 @@ body.dark-mode .dark-mode-button:hover {
 /* Hide moon icon by default (assuming light mode is default) */
 .dark-mode-button .fa-moon {
     display: none;
-  }
+}
   
-  /* Show moon icon and hide sun icon in dark mode */
-  body.dark-mode .dark-mode-button .fa-moon {
+/* Show moon icon and hide sun icon in dark mode */
+body.dark-mode .dark-mode-button .fa-moon {
     display: inline-block;
-  }
+}
   
-  body.dark-mode .dark-mode-button .fa-sun {
+body.dark-mode .dark-mode-button .fa-sun {
     display: none;
 }
 
 /* Dark mode changes end here */
-/* Pop-up Styles */
 
+/* Pop-up Styles */
 @keyframes fadeIn {
     0% {
         scale: 0;
@@ -168,7 +166,7 @@ body.dark-mode .dark-mode-button:hover {
     }
 }
 
-#h2-of-popup{
+#h2-of-popup {
     font-size: 192%;
     margin-bottom: 1rem;
     line-height: 1.9rem;
@@ -185,40 +183,33 @@ body.dark-mode .dark-mode-button:hover {
     height: 38vh;
     min-width: 250px;
     min-height: 200px;
-    
     overflow-y: hidden;
     text-align: center;
     padding: 1.7rem;
     z-index: 1000;
     transition: all 0.3s ease-out;
     animation: fadeIn 1.7s ease-in;
-     background-color: #d7fdf0;
+    background-color: #d7fdf0;
     color: #4278a5;
     border-radius: 2rem;
     word-wrap: break-word;
     overflow-wrap: break-word;
     line-height: 1.6rem;
-       
 }
-
-
 
 #popup-banner:hover {
     transform: scale(1.001);
-
     filter: drop-shadow(0px 0px 6px rgba(4, 44, 22, 0.555));
 }
 
-
 #close-btn-popup {
     position: absolute;
-   right: 2%;
+    right: 2%;
     top: 2%;
     font-size: 20px;
     cursor: pointer;
     color: #222;
     transition: all 0.4s ease-in;
-
 }
 
 #close-btn-popup:hover {
@@ -226,7 +217,6 @@ body.dark-mode .dark-mode-button:hover {
     font-weight: 600;
     transform: scale(1.4);
     filter: drop-shadow(0px 0px 3px rgb(15, 15, 15));
-
 }
 
 #join-btn-popup {
@@ -244,13 +234,10 @@ body.dark-mode .dark-mode-button:hover {
 #join-btn-popup:hover {
     transform: scale(1.1);
     cursor: pointer;
-
 }
 
-/* pop-up styles end here */
-
- /* Responsive Navbar Styles starts*/
- .nav-toggle {
+/* Responsive Navbar Styles starts */
+.nav-toggle {
     display: none;
     background: none;
     border: none;
@@ -269,7 +256,6 @@ body.dark-mode .dark-mode-button:hover {
     .nav-content {
         flex-direction: column;
         align-items: flex-start;
-
     }
 
     .nav-left, .nav-right {
@@ -293,8 +279,6 @@ body.dark-mode .dark-mode-button:hover {
         width: 50%;
         margin-top: 10px;
     }
-
-    
 }
 
 @media (max-width: 480px) {
@@ -318,11 +302,10 @@ body.dark-mode .dark-mode-button:hover {
     background-color: #f9f9f9;
 }
 
-.hero-section h1{
+.hero-section h1 {
     text-align: center;
     margin-top: 25px;
     font-size: 30px;
-
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -368,7 +351,6 @@ body.dark-mode .dark-mode-button:hover {
     background-color: #ffffff;
     padding: 50px 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
 }
 
 .team-container {
@@ -447,16 +429,12 @@ body.dark-mode .dark-mode-button:hover {
     color: #000000; /* Change to your preferred hover color */
 }
 
-
-
-
 /* Footer Styles */
 footer {
     background-color: #222;
     color: #fff;
     padding: 40px 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
 }
 
 .footer-container {
@@ -524,26 +502,70 @@ ul li a:hover {
     padding-top: 20px;
 }
 
+/* Programs Section Styles */
+.programs-section {
+    background-color: #f0f0f0;
+    padding: 60px 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
+.programs-container {
+    max-width: 1200px;
+    margin: auto;
+}
 
-
-
-/* Suggestion Box Styles */
-.suggestion {
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-    width: 100px;
-    height: 100px;
-    background-color: #1206eb;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.programs-container h1 {
+    margin-bottom: 40px;
+    font-size: 30px;
     text-align: center;
 }
 
-.suggestion a {
-    color: rgb(255, 255, 255);
+.program-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.program-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.program-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.program-info {
+    text-align: center;
+}
+
+.program-info h3 {
+    margin-bottom: 5px;
+}
+
+.program-info .description {
+    margin-bottom: 10px;
+}
+
+.program-info .link {
+    font-weight: bold;
+    color: #0008ff;
     text-decoration: none;
+}
+
+.program-info .link:hover {
+    text-decoration: underline;
 }
