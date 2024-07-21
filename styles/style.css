@@ -7,7 +7,7 @@
 
 /* Navbar Styles */
 nav {
-    background-color: #fcfafa;
+    background-color: rgb(10, 17, 76);
     padding: 10px 20px;
     position: fixed;
     width: 100%;
@@ -37,6 +37,7 @@ nav {
     display: flex;
     align-items: center;
     gap: 20px;
+    position: relative;
 }
 
 .logo-link {
@@ -51,7 +52,7 @@ nav {
 }
 
 .nav-text a {
-    color: #333;
+    color: #eee9e9;
     text-decoration: none;
     font-weight: bold;
     padding: 5px 10px;
@@ -66,9 +67,18 @@ nav {
 
 .search-bar {
     width: 220px;
-    padding: 10px;
+    padding: 10px 10px 10px 22px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+.search-icon{
+    height: 18px;
+    width: 22px;
+    fill: #333;
+    position: absolute;
+    top: 10px;
+    left: 2px;
 }
 
 .dark-mode-button {

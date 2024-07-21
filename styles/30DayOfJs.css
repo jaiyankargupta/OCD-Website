@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: #222f3d;
+    color: white;
+}
+header{
+    background-color: #131A22;
+    padding: 10px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+nav{
+    display: flex;
+    justify-content: left;
+}
+nav .heading{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+nav h1{
+    font-size: 2.5rem;
+    color:rgb(255, 212, 59);
+}
+
+/* hero  */
+.hero-section{
+    background-color: #222f3d;
+    height: auto;
+
+    padding: 20px 100px;
+
+    border-bottom: 2px solid rgba(255, 255, 255, 0.288);
+}
+.hero-section h1{
+    text-align: center;
+}
+.hero-section p{
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.637);
+}
+.hero-section .learning{
+    margin-top: 10px;
+}
+
+/* main  */
+main{
+    width: 700px;
+    padding: 20px;
+    background-color: #131A22;
+
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+main h2 {
+    margin-bottom: 20px;
+    color:white;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.686);
+}
+
+.form-group input,
+.form-group textarea {
+    background-color: rgba(255, 255, 255, 0.772);
+    width: 100%;
+    padding: 10px;
+    border:none;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border:3px solid orange;
+    outline: none;
+}
+
+button {
+    background-color: #007bff;
+    color: rgba(255, 255, 255, 0.812);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* whatsapp */
+.whatsapp-group{
+    width: 70px;
+    position: fixed;
+    bottom: 10vh;
+    right: 10px;
+}
+.whatsapp-group p{
+    text-align: center;
+    color: white;
+}

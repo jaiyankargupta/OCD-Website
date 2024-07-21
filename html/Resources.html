@@ -16,41 +16,43 @@
         <button id="dark-mode-toggle" aria-label="Toggle Dark Mode">🌙</button>
     </nav>
 
-    <div id="choice-modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Choose an Option</h2>
-            <button id="view-resources-btn">View Resources</button>
-            <button id="add-resources-btn">Add Resource</button>
+    <div class="main-content">
+        <div id="choice-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Choose an Option</h2>
+                <button id="view-resources-btn">View Resources</button>
+                <button id="add-resources-btn">Add Resource</button>
+            </div>
         </div>
+
+        <section id="resource-library" class="resource-library hidden">
+            <h1>Resource Library</h1>
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="Search resources...">
+                <button id="clear-button">Clear</button>
+            </div>
+            <div id="resource-container">
+                <!-- Resources will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <section class="add-resource hidden">
+            <h2>Add New Resource</h2>
+            <form id="resource-form">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+                
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+                
+                <label for="link">Link:</label>
+                <input type="url" id="link" name="link" required>
+                
+                <button type="submit">Add Resource</button>
+            </form>
+        </section>
     </div>
-
-    <section id="resource-library" class="resource-library hidden">
-        <h1>Resource Library</h1>
-        <div class="search-container">
-            <input type="text" id="search-bar" placeholder="Search resources...">
-            <button id="clear-button">Clear</button>
-        </div>
-        <div id="resource-container">
-            <!-- Resources will be dynamically loaded here -->
-        </div>
-    </section>
-
-    <section class="add-resource hidden">
-        <h2>Add New Resource</h2>
-        <form id="resource-form">
-            <label for="title">Title:</label>
-            <input type="text" id="title" name="title" required>
-            
-            <label for="description">Description:</label>
-            <textarea id="description" name="description" required></textarea>
-            
-            <label for="link">Link:</label>
-            <input type="url" id="link" name="link" required>
-            
-            <button type="submit">Add Resource</button>
-        </form>
-    </section>
 
     <footer class="footer">
         <div class="footer-content">

@@ -5,6 +5,13 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
 }
 
 /* Navbar styles */
@@ -112,19 +119,51 @@ nav a:hover {
     border-radius: 5px;
     padding: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden;
+    position: relative;
 }
 
 .resource h3 {
     margin-top: 0;
+    color: #007bff;
+    transition: color 0.2s;
+}
+
+.resource p {
+    color: #666;
 }
 
 .resource a {
     color: #007bff;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
 }
 
 .resource a:hover {
     text-decoration: underline;
+}
+
+.resource:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.resource::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    transition: height 0.2s;
+}
+
+.resource:hover::before {
+    height: 100%;
+    opacity: 0.1;
 }
 
 /* Add Resource Section styles */
@@ -160,6 +199,7 @@ nav a:hover {
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.2s;
 }
 
 .add-resource button:hover {
@@ -172,6 +212,7 @@ nav a:hover {
     color: #fff;
     padding: 20px;
     text-align: center;
+    margin-top: auto;
 }
 
 .footer-content {
