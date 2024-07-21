@@ -87,43 +87,57 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 0.5s ease-in;
 }
 
 .dark-mode-button:hover {
-    background-color: #09fd56;
+    background-color: #c3c3c3;
     color: #000;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
 }
 
 /* Light Mode Styles */
 body.light-mode  {
+    background-color: #e8e8e8;
     color: #000000; 
 }
 
 /* Dark Mode Styles */
 body.dark-mode {
-    background-color: #222; 
+    background-color: #212121; 
     color: #ffffff; 
 }
 
 body.dark-mode .hero-section,
 body.dark-mode nav,
 body.dark-mode .team-section,
+body.dark-mode .team-card,
 body.dark-mode .programs-section  {
-    background-color: #333;
+    background-color: #212121;
     color: #ffffff;
 }
 
-body.dark-mode .nav-text a {
+body.dark-mode .team-card,
+body.dark-mode nav,
+body.dark-mode .program-card{
+    background-color: #171717;
+}
+
+body.dark-mode .nav-text a,
+body.dark-mode .team-info h3,
+body.dark-mode .team-info .role {
     color: #ffffff;
 }
 
 body.dark-mode .dark-mode-button {
     background-color: #ffffff;
-    color: #333;
+    color: #212121;
 }
 
 body.dark-mode .dark-mode-button:hover {
-    background-color: #09fd56;
+    background-color: #c3c3c3;
     color: #000;
 }
 
@@ -326,7 +340,7 @@ body.dark-mode .dark-mode-button .fa-sun {
 
 /* Hero Section Styles */
 .hero-section {
-    padding: 80px 20px 20px 20px;
+    padding: 150px 20px 150px 20px;
     background-color: #f9f9f9;
 }
 
@@ -377,9 +391,20 @@ body.dark-mode .dark-mode-button .fa-sun {
 
 /* Team Section Styles */
 .team-section {
+    background-color: #f9f9f9;
     padding: 50px 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
 }
+
+.team-section.hidden {
+    transform: translateY(100px);
+    opacity: 0;
+  }
 
 .team-container {
     max-width: 1200px;
@@ -400,8 +425,7 @@ body.dark-mode .dark-mode-button .fa-sun {
 }
 
 .team-card {
-    background-color: white;
-    color:#000000 ;
+    background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -460,7 +484,7 @@ body.dark-mode .dark-mode-button .fa-sun {
 
 /* Footer Styles */
 footer {
-    background-color: #222;
+    background-color: #171717;
     color: #fff;
     padding: 40px 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -554,9 +578,19 @@ ul li a:hover {
 /* Programs Section Styles */
 .programs-section {
     background-color: #f9f9f9;
-    padding: 10px 20px;
+    padding: 50px 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
 }
+
+.programs-section.hidden {
+    transform: translateY(100px);
+    opacity: 0;
+  }
 
 .programs-container {
     max-width: 1200px;
@@ -607,7 +641,6 @@ ul li a:hover {
 
 .program-info p {
     font-size: 16px;
-    color: #555;
 }
 
 .view-demo {
