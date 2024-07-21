@@ -62,62 +62,66 @@
     }
 
     button:hover {
-        background-color: #0056b3;
+        background-color: #09fd56;
     }
-    /*  dark-mode button */
+    /* Customize the styling as needed */
     .dark-mode-button {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1000; /* Ensure it's above other elements */
-    background-color: #ffffff;
-    color: #333;
-    border: none;
-    border-radius: 50%;
     padding: 10px;
-    cursor: pointer;
-}
-/* Dark mode styles */
-body.dark-mode {
+    border: none;
+    border-radius: 5px;
     background-color: #333;
-    color: #ffffff;
-}
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
 
-.dark-mode-button {
+    body.dark-mode .dark-mode-button {
     background-color: #ffffff;
     color: #333;
-}
+    }
 
-.dark-mode-button:hover {
+    body.dark-mode .dark-mode-button:hover {
     background-color: #09fd56;
     color: #000;
-}
+   }
+   .moon-icon {
+    display: none; /* Initially hidden */
+   }
 
-/* Hide moon icon by default (assuming light mode is default) */
-.dark-mode-button .fa-moon {
+  /* Apply styles when dark mode is active */
+   body.dark-mode .moon-icon {
+    display: inline;
+   }
+
+   body.dark-mode .sun-icon {
     display: none;
-}
-
-/* Show moon icon and hide sun icon in dark mode */
-body.dark-mode .dark-mode-button .fa-moon {
-    display: inline-block;
-}
-
-body.dark-mode .dark-mode-button .fa-sun {
-    display: none;
-}
-body.dark-mode .feedback-section {
+  }
+   body.dark-mode .feedback-section  {
     background-color: #333; /* Slightly lighter than body for contrast */
     color: #ffffff;
-}
-
-
+  }
+   body.dark-mode .feedback-section h2{
+    color: #ffffff;
+  }
+   body.dark-mode .form-group label{
+    color: #ffffff;
+   }
+   /* dark mode changes ended here */
+    
 </style>
 <body>
     <!--Dark-Mode toggle-->
     <button class="dark-mode-button" onclick="toggleDarkMode()">
-        <i class="fa fa-moon"></i> <!-- Moon icon -->
-        <i class="fa fa-sun"></i> <!-- Sun icon -->
+        <span class="moon-icon">🌙</span> <!-- Moon icon -->
+        <span class="sun-icon">☀️</span> <!-- Sun icon -->
     </button>
     
 
