@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Library</title>
+    <link rel="stylesheet" href="../styles/style.css"> <!-- Existing CSS file -->
+    <link rel="stylesheet" href="../styles/resourceLibrary.css"> <!-- New CSS file -->
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <div class="nav-text"><a href="../index.html">Home</a></div>
+            <div class="nav-text"><a href="http://127.0.0.1:5500/html/resourceLibrary.html">Resource Library</a></div>
+            <!-- Add other existing links here -->
+        </div>
+        <button id="dark-mode-toggle" aria-label="Toggle Dark Mode">🌙</button>
+    </nav>
+    <div id="choice-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Choose an Option</h2>
+            <button id="view-resources-btn">View Resources</button>
+            <button id="add-resources-btn">Add Resource</button>
+        </div>
+    </div>
+    <section id="resource-library" class="resource-library hidden">
+        <h1>Resource Library</h1>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search resources...">
+            <button id="clear-button">Clear</button>
+        </div>
+        <div id="resource-container">
+            <!-- Resources will be dynamically loaded here -->
+        </div>
+        <div class="add-resource hidden">
+            <h2>Add New Resource</h2>
+            <form id="resource-form">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+                
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+                
+                <label for="link">Link:</label>
+                <input type="url" id="link" name="link" required>
+                
+                <button type="submit">Add Resource</button>
+            </form>
+        </div>
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-left">
+            <h2>OCD Society</h2>
+            <p>NIT Kurukshetra</p>
+            <p>Creating opportunities for development and collaboration.</p>
+        </div>
+        <div class="footer-center">
+            <h3>Contact Us</h3>
+            <p>Email: <a href="mailto:ocdsociety@nitkkr.ac.in">ocdsociety@nitkkr.ac.in</a></p>
+            <p>Address: National Institute of Technology, Kurukshetra, Haryana, India - 136119</p>
+        </div>
+        <div class="footer-right">
+            <h3>Follow Us</h3>
+            <a href="https://github.com/OCD-Society-NIT-KKR" target="_blank" class="social-link">GitHub</a>
+            <a href="https://www.instagram.com/OCDSocietyNITKKR" target="_blank" class="social-link">Instagram</a>
+            <a href="https://twitter.com/OCDSocietyNITKKR" target="_blank" class="social-link">Twitter</a>
+            <a href="https://www.linkedin.com/company/ocd-society-nitkkr" target="_blank" class="social-link">LinkedIn</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 OCD Society, NIT Kurukshetra. All rights reserved.</p>
+    </div>
+</footer>
+
+    </section>
+    <script src="../js/resourceLibrary.js"></script> <!-- New JS file -->
+</body>
+</html>
