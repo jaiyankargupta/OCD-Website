@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.user-info-card {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-details h2 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.user-details p {
+    margin-top: 10px;
+    color: #ff9900;
+    font-size: 0.9em;
+}
+
+.user-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.menu-item {
+    width: calc(33.33% - 10px);
+    text-align: center;
+    cursor: pointer;
+}
+
+.menu-item img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+.menu-item p {
+    margin: 0;
+    font-size: 0.8em;
+    color: #333;
+}
+
+.menu-item-horizontal {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.menu-item-horizontal img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.menu-item-horizontal p {
+    margin: 5px;
+    font-size: 0.9em;
+    color: #333;
+}
