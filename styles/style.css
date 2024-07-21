@@ -87,31 +87,42 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 0.5s ease-in;
 }
 
 .dark-mode-button:hover {
-    background-color: #09fd56;
+    background-color: #c3c3c3;
     color: #000;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
 }
 
 /* Light Mode Styles */
 body.light-mode  {
-    background-color: #fff; 
+    background-color: #e8e8e8; 
     color: #000000; 
 }
 
 /* Dark Mode Styles */
 body.dark-mode {
-    background-color: #222; 
+    background-color: #212121; 
     color: #ffffff; 
 }
 
 body.dark-mode .hero-section,
 body.dark-mode nav,
 body.dark-mode .team-section,
-body.dark-mode .team-card {
-    background-color: #333;
+body.dark-mode .team-card,
+body.dark-mode .programs-section {
+    background-color: #212121;
     color: #ffffff;
+}
+
+body.dark-mode .team-card,
+body.dark-mode nav,
+body.dark-mode .program-card{
+    background-color: #171717;
 }
 
 body.dark-mode .nav-text a,
@@ -122,11 +133,11 @@ body.dark-mode .team-info .role {
 
 body.dark-mode .dark-mode-button {
     background-color: #ffffff;
-    color: #333;
+    color: #212121;
 }
 
 body.dark-mode .dark-mode-button:hover {
-    background-color: #09fd56;
+    background-color: #c3c3c3;
     color: #000;
 }
 
@@ -350,39 +361,58 @@ body.dark-mode .dark-mode-button .fa-sun {
 
 .hero-text {
     flex: 1;
-    max-width: 100%;
-    margin-right: 20px;
+    max-width: 50%;
+    font-size: 22px;
+    line-height: 1.6;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    animation: slideFromTop 0.5s ease-out; /* Apply the animation */
 }
 
 .hero-images {
     flex: 1;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 100px;
-    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
 }
 
 .hero-images img {
-    width: 100%;
-    height: 200px;
-    object-fit: scale-down;
+    width: 45%; /* Adjust image size for two in a line */
+    height: 45%; /* Ensure images are square */
+    max-width: 300px;
+    max-height: 300px;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.hero-paragraph {
-    margin: 20px 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    line-height: 1.6;
-    font-size: 1.25rem;
-    padding: 10px;
+@keyframes slideFromTop {
+    0% {
+        transform: translateY(-15%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 /* Team Section Styles */
 .team-section {
-    background-color: #ffffff;
+    background-color: #f9f9f9;
     padding: 50px 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
 }
+
+.team-section.hidden {
+    transform: translateY(100px);
+    opacity: 0;
+  }
 
 .team-container {
     max-width: 1200px;
@@ -462,7 +492,7 @@ body.dark-mode .dark-mode-button .fa-sun {
 
 /* Footer Styles */
 footer {
-    background-color: #222;
+    background-color: #171717;
     color: #fff;
     padding: 40px 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -526,7 +556,7 @@ ul li a:hover {
 }
 
 .social-icons a:hover {
-    color: #01f809;
+    color: #c3c3c3;
 }
 
 .footer-bottom {
@@ -558,7 +588,17 @@ ul li a:hover {
     background-color: #f9f9f9;
     padding: 50px 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
 }
+
+.programs-section.hidden {
+    transform: translateY(100px);
+    opacity: 0;
+  }
 
 .programs-container {
     max-width: 1200px;
@@ -609,7 +649,6 @@ ul li a:hover {
 
 .program-info p {
     font-size: 16px;
-    color: #555;
 }
 
 .view-demo {

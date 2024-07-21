@@ -60,3 +60,36 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // JS code for Pop-up section ends here
+
+
+document.addEventListener('scroll', () => {
+  const sections = document.querySelectorAll('.programs-section');
+  const scrollPosition = window.scrollY + window.innerHeight;
+
+  sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+
+      if (scrollPosition > sectionTop + sectionHeight / 4) {
+          section.classList.remove('hidden');
+      } else {
+          section.classList.add('hidden');
+      }
+  });
+});
+
+document.addEventListener('scroll', () => {
+  const sections = document.querySelectorAll('.team-section');
+  const scrollPosition = window.scrollY + window.innerHeight;
+
+  sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+
+      if (scrollPosition > sectionTop + sectionHeight / 4) {
+          section.classList.remove('hidden');
+      } else {
+          section.classList.add('hidden');
+      }
+  });
+});
