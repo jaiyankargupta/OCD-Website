@@ -6,58 +6,49 @@
     <title>Resource Library</title>
     <link rel="icon" type="image/x-icon" href="../public/ocdlogo.png">
     <link rel="stylesheet" href="../styles/resourceLibrary.css">
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/style.css">
-    
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-     <!-- Navbar -->
-     <nav>
+    <!-- Navbar -->
+    <nav>
         <div class="nav-content">
-          <button class="nav-toggle" id="nav-toggle">
-            <i class="fas fa-bars"></i>
-          </button>
-          <div class="nav-left">
-            <a href="..\index.html" class="logo-link">
-              <img class="logo" src="../public/ocdlogo.png" alt="OCD Logo" />
-            </a>
-            <div class="nav-text"><a href="..\index.html">Home</a></div>
-            <div class="nav-text"><a href="about.html">About</a></div>
-            <div class="nav-text"><a href="events.html">Events</a></div>
-            <div class="nav-text">
-              <a href="Resources.html">Resources</a>
-            </div>
-            <div class="nav-text dropdown">
-              <a href="contactUs.html">Links</a>
-              <div class="dropdown-content">
-                <a href="contributors.html">Contributors</a>
-              <a href="contests.html">Contest</a>
-              <a href="blog.html">Blogs</a>
-              <a href="achievements.html">Achievements</a>
-              <a href="contactUs.html">Contact Us</a>
-              </div>
-            </div>
-          </div>
-          <div class="nav-right">
-           
-            <div class="search-bar">
-              <input type="text" placeholder="Search" />
-              <span><i class="ri-search-line"></i></span>
-            </div>
-            <button id="dark-mode-toggle" class="dark-mode-button">
-              <i class="fas fa-sun"></i>
-              <!-- Sun icon for light mode -->
-              <i class="fas fa-moon"></i>
-              <!-- Moon icon for dark mode -->
+            <button class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
             </button>
-          </div>
+            <div class="nav-left">
+                <a href="../index.html" class="logo-link">
+                    <img class="logo" src="../public/ocdlogo.png" alt="OCD Logo">
+                </a>
+                <div class="nav-text"><a href="../index.html">Home</a></div>
+                <div class="nav-text"><a href="about.html">About</a></div>
+                <div class="nav-text"><a href="events.html">Events</a></div>
+                <div class="nav-text"><a href="Resources.html">Resources</a></div>
+                <div class="nav-text dropdown">
+                    <a href="contactUs.html">Links</a>
+                    <div class="dropdown-content">
+                        <a href="contributors.html">Contributors</a>
+                        <a href="contests.html">Contest</a>
+                        <a href="blog.html">Blogs</a>
+                        <a href="achievements.html">Achievements</a>
+                        <a href="contactUs.html">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <span><i class="ri-search-line"></i></span>
+                </div>
+                <button id="dark-mode-toggle" class="dark-mode-button">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
         </div>
-      </nav>
+    </nav>
+
     <div class="main-content">
         <div id="choice-modal" class="modal">
             <h1>Choose an Option:</h1>
@@ -81,20 +72,19 @@
         <section class="add-resource hidden">
             <h1>Add New Resource</h1>
             <form id="resource-form">
-              <!-- added label and input/textbox in div -->
-              <div class="label">
-                <label for="title">Title:</label>
-                <input type="text" id="title" name="title" required>
-              </div>
-              <div class="label">
-                <label for="link">Link:</label>
-                <input type="url" id="link" name="link" required>
-              </div>
-              <div class="label">
-                <label for="description">Description:</label>
-                <textarea id="description" name="description" required></textarea>
-              </div>
-              <button type="submit">Add Resource</button>
+                <div class="label">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div class="label">
+                    <label for="link">Link:</label>
+                    <input type="url" id="link" name="link" required>
+                </div>
+                <div class="label">
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" required></textarea>
+                </div>
+                <button type="submit">Add Resource</button>
             </form>
         </section>
     </div>
@@ -104,6 +94,7 @@
     </div>
 
     <footer>
+<<<<<<< HEAD
       <div class="footer-container">
         <div class="footer-left">
           <a href="index.html" class="footer-logo-link">
@@ -115,39 +106,38 @@
           </a>
           <p>&copy; 2024 Open Code Developers Society, NIT Kurukshetra.</p>
           <p>All rights reserved.</p>
+=======
+        <div class="footer-container">
+            <div class="footer-left">
+                <a href="../index.html" class="footer-logo-link" title="Back to Homepage">
+                    <img class="footer-logo" src="../public/ocdlogo.png" alt="OCD Logo">
+                </a>
+                <p>&copy; 2024 Open Code Developers Society, NIT Kurukshetra.</p>
+                <p>All rights reserved.</p>
+            </div>
+            <div class="footer-center">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../html/events.html">Events</a></li>
+                    <li><a href="../html/about.html">About</a></li>
+                    <li><a href="../html/achievements.html">Achievements</a></li>
+                    <li><a href="../html/contactUs.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://github.com/Mohak1809/OCD-Website" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://x.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/ocd_nitkkr/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/showcase/opencode-developers-society" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+>>>>>>> upstream/main
         </div>
-        <div class="footer-center">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="html/events.html">Events</a></li>
-            <li><a href="html/about.html">About</a></li>
-            <li><a href="html/achievements.html">Achievements</a></li>
-            <li><a href="html/contactUs.html">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="footer-right">
-          <h3>Follow Us</h3>
-          <div class="social-icons">
-            <a href="https://github.com/Mohak1809/OCD-Website" target = "_blank"
-              ><i class="fab fa-github"></i
-            ></a>
-            <a href="https://x.com" target = "_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/ocd_nitkkr/" target = "_blank"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a
-              href="https://www.linkedin.com/showcase/opencode-developers-society" target = "_blank"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-          </div>
-        </div>
-      </div>
     </footer>
 
     <script src="../js/resourceLibrary.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 </html>
-
-
-
