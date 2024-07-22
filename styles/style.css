@@ -243,6 +243,19 @@ body.dark-mode .dark-mode-button .fa-moon {
 body.dark-mode .dark-mode-button .fa-sun {
     display: none;
 }
+body.dark-mode .card{
+  background-color: grey;
+  box-shadow: 0 4px 6px rgba(224, 217, 217, 0.2);
+}
+body.dark-mode .card:hover{
+  box-shadow: 0 8px 16px rgba(224, 217, 217, 0.3);
+}
+body.dark-mode .card .team-info h2{
+  color: black;
+}
+body.dark-mode .card .team-info p{
+  color: black;
+}
 
 
 /* Pop-up Styles */
