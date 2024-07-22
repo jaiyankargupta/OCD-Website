@@ -26,7 +26,7 @@
   .card {
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     transition: transform 0.2s, box-shadow 0.2s;
     text-align: center;
@@ -37,7 +37,7 @@
   }
   
   .card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   }
   
   .avatar {
