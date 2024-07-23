@@ -251,7 +251,7 @@ body.dark-mode .card{
 }
 body.dark-mode .card:hover{
   box-shadow: 0 8px 16px rgba(224, 217, 217, 0.3);
-  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  background: linear-gradient(135deg,white,white);
 }
 body.dark-mode .card .team-info h2{
   color: white;
