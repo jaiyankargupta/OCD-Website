@@ -20,23 +20,45 @@
 
 h1 {
     width: 100%;
-    color: black;
+    color: rgb(30, 29, 29);
     text-align: center;
     margin-bottom: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .Card {
-    background-color:#bbccfb;
+    position: relative;
+    background: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px;
     width: 300px;
     padding: 20px;
     box-sizing: border-box;
-    position: relative;
     flex: 1 1 calc(33.333% - 40px); /* Adjusting width with margin */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #fff;
+    overflow: hidden; /* Ensures the pseudo-element stays within the card */
+}
+
+.Card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://t3.ftcdn.net/jpg/03/97/76/36/360_F_397763601_3FmlyoqMSsAGn35x2KoyMvaG55j8AxO3.jpg');
+    background-image: url('https://media.istockphoto.com/id/1219874371/vector/abstract-hi-tech-technology-background.jpg?s=612x612&w=0&k=20&c=rRGZyjWl9-H-MdLRQogMQ0bWUCzpOo2Qa-u1LuQbV6U=');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8; /* Adjust the transparency level */
+    z-index: 0; /* Ensure it is behind the text */
+}
+
+.Card > * {
+    position: relative;
+    z-index: 1; /* Ensure the text is above the pseudo-element */
 }
 
 .Card:hover {
@@ -45,9 +67,10 @@ h1 {
 }
 
 .Card h2 {
-    color:#2e5ee1;
+    color:#2050d6;
     margin: 0 0 10px;
     font-size: 1.5em;
+    font-weight: 750;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -57,6 +80,7 @@ h1 {
     line-height: 1.6;
     color: black;
     margin: 5px 0;
+    font-weight: 500;
 }
 
 .Card a {
@@ -75,7 +99,7 @@ h1 {
 }
 
 .Card a:hover {
-    background-color: #0056b3;
+    background-color: #1575db;
 }
 
 /* Ensure dark mode affects all major sections */
