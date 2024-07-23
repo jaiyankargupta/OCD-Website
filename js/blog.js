@@ -43,10 +43,8 @@ form.addEventListener('submit',function(e){
     //create new blog-container
     const new_blog_container=document.createElement('div');
     new_blog_container.className="blog-container";
+    new_blog_container.setAttribute("style","padding-top:15px");
     new_blog_container.innerHTML=`
-    <div class="remove-blog" title="REMOVE THIS BLOG">
-        <img src="../public/cross.svg" alt="CUT" width="15px" height="15px">
-    </div>
     <div class="image">
         <img src="${imgLinkText}" alt="ocdlogo" id="blog-img" width="100%" height="100%">
     </div>
