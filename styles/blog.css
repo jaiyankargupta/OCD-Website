@@ -1,200 +1,121 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    top: 0px;
-}
-
-nav {
-    background-color: #fcfafa;
-    padding: 10px 20px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.25rem; 
-    margin-bottom: 30px;
-}
-
-.nav-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: auto;
-}
-
-.nav-left {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.nav-right {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.logo-link {
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    height: 70px;
-    width: 70px;
-    border-radius: 50%;
-}
-
-.nav-text a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px 10px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.nav-text a:hover {
-    background-color: #333;
-    color: #fff;
-    border-radius: 5px;
-}
-
-.search-bar {
-    width: 220px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.dark-mode-button {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #333;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1rem; /* Adjusted for better responsiveness */
-    width: 40px; /* Adjust as needed */
-    height: 40px; /* Adjust as needed */
-    border-radius: 50%; /* Make the button circular */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.dark-mode-button:hover {
-    background-color: #09fd56;
-    color: #000;
-}
-
-/* Light Mode Styles */
-body.light-mode  {
-    background-color: #fff; 
-    color: #000000; 
-}
-
-/* Dark Mode Styles */
-body.dark-mode {
-    background-color: #222; 
-    color: #ffffff; 
-}
-
-/* ADD THESE NEW STYLES */
-/* Ensure dark mode affects all major sections */
-body.dark-mode .hero-section,
-body.dark-mode nav,
-body.dark-mode .team-section,
-body.dark-mode .team-card {
-    background-color: #333; /* Slightly lighter than body for contrast */
-    color: #ffffff;
-}
-
-/* Adjust text color for better visibility in dark mode */
-body.dark-mode .nav-text a,
-body.dark-mode .team-info h3,
-body.dark-mode .team-info .role {
-    color: #ffffff;
-}
-
-body.dark-mode .dark-mode-button {
-    background-color: #ffffff;
-    color: #333;
-}
-
-/* Adjust button hover state in dark mode */
-body.dark-mode .dark-mode-button:hover {
-    background-color: #09fd56;
-    color: #000;
-}
-
-/* Hide moon icon by default (assuming light mode is default) */
-.dark-mode-button .fa-moon {
-    display: none;
-  }
-  
-  /* Show moon icon and hide sun icon in dark mode */
-  body.dark-mode .dark-mode-button .fa-moon {
-    display: inline-block;
-  }
-  
-  body.dark-mode .dark-mode-button .fa-sun {
-    display: none;
-}
-
 .container{
-    display: flex;
-    flex-direction: row;
-}
-
-.all-blog{
     margin-top: 100px;
-    position: relative;
+}
+.blogs-container{
+    padding: 20px;
+
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* margin: 100px; */
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 .blog-container {
-    display: flex;
-    align-items: flex-start;
-    margin: 30px;
-    border: 2px solid rgb(38, 164, 68);
-    border-radius: 7px;
-    gap: 10px;
-    padding: 5px;
-}
-#blog-img {
-    margin: 10px;
-    width: 300px;
-    height: 200px;
-    margin-right: 20px;
-}
-#blog-des {
-    max-width: 600px;
-}
-.recent-updates{
+    padding: 0px 10px 10px 10px;
+    
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0,0.3);
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    border: 2px solid red;
-    border-radius: 10px;
-    height: max-content;
-    margin-top: 300px;
-    margin-right: 1px;
-    padding: 20px;
+    width: 300px;
+    height: 500px;
+
+    position: relative;
+}
+.blog-container .remove-blog{
+    align-self: flex-end;
+    margin-bottom: 0px;
+    height: 15px;
+    cursor: pointer;
+}
+.blog-container .image{
+    width: 280px;
+    height: 200px;
+    margin-bottom: 10px;
 }
 
-.recent-updates h2{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.blog-container #blog-des{
+    width: 280px;
+    height: auto;
 }
-#reflink{
-    border-bottom: 2px solid grey;
+.blog-container #blog-des h2,p{
+    text-wrap: wrap;
+}
+.blog-container .learn-more{
+    justify-self: end;
+    position:absolute;
+    bottom: 10px;
+}
+button{
+    padding: 3px;
+    border: none;
+    border-radius: 4px;
+
+    box-shadow: 0px 0px 10px rgb(0, 0, 0,0.3);
+    background-color:rgb(18, 181, 170);
+
+    cursor: pointer;
+}
+button:hover{
+    background-color:rgb(0, 204, 255) ;
+}
+
+/* add new blog  */
+.new-button{
+    position: fixed;
+    right: 20px;
+    bottom: 10vh;
+    z-index: 100;
+
+    cursor: pointer;
+}
+.new-button img{
+    width: 100px;
+    height: 100px;
+    max-width: 20vh;
+    max-height: 20vh;
+}
+
+.new-blog-window{
+    background-color: white;
+    width: 60vw;
+    height: auto;
+    position: absolute;
+    top: 110px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 10px;
+    box-shadow: 0px 0px 1000px rgb(0, 0, 0);
+}
+.new-blog-window .close-window{
+    display: flex;
+    justify-content: flex-end;
+}
+.new-blog-window .close-window img{
+    cursor: pointer;
+}
+
+.blog-data{
+    margin-top: 10px;
+    padding: 10px 50px;
+}
+.blog-data form .form-group{
+    margin-bottom: 20px;
+}
+.blog-data form .form-group label{
+    color: black;
+}
+.blog-data form .form-group input,textarea{
+    border: 2px solid gray;
+    border-radius: 5px;
+    width: 100%;
     padding: 5px;
+}
+.blog-data form button{
+    padding: 10px;
 }

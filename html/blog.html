@@ -4,110 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog | Page</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="icon" type="image/x-icon" href="./public/ocdlogo.png" />
    
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link rel="stylesheet" href="../styles/blog.css">
-    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="stylesheet" href="../styles/blog.css"/>
+    <link rel="stylesheet" href="../styles/style.css"/>
 
 </head>
 <body>
-     <!-- Navbar -->
-     <nav>
-      <div class="nav-content">
-        <button class="nav-toggle" id="nav-toggle">
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="nav-left">
-          <a href="index.html" class="logo-link">
-            <img class="logo" src="../public/ocdlogo.png" alt="OCD Logo" />
-          </a>
-          <div class="nav-text"><a href="index.html">Home</a></div>
-          <div class="nav-text"><a href="./about.html">About</a></div>
-          <div class="nav-text"><a href="./events.html">Events</a></div>
-          <div class="nav-text">
-            <a href="./Resources.html">Resources</a>
-          </div>
-          <div class="nav-text dropdown">
-            <a href="./contactUs.html">Links</a>
-            <div class="dropdown-content">
-              <a href="./contributors.html">Contributors</a>
-              <a href="./contests.html">Contest</a>
-              <a href="./blog.html">Blogs</a>
-              <a href="./achievements.html">Achievements</a>
-              <a href="./contactUs.html">Contact Us</a>
-            </div>
-          </div>
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-content">
+      <button class="nav-toggle" id="nav-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav-left">
+        <a href="index.html" class="logo-link">
+          <img class="logo" src="../public/ocdlogo.png" alt="OCD Logo" />
+        </a>
+        <div class="nav-text"><a href="index.html">Home</a></div>
+        <div class="nav-text"><a href="./about.html">About</a></div>
+        <div class="nav-text"><a href="./events.html">Events</a></div>
+        <div class="nav-text">
+          <a href="./Resources.html">Resources</a>
         </div>
-        <div class="nav-right">
-          <div class="search-bar">
-            <input type="text" placeholder="Search" />
-            <span><i class="ri-search-line"></i></span>
+        <div class="nav-text dropdown">
+          <a href="./contactUs.html">Links</a>
+          <div class="dropdown-content">
+            <a href="./contributors.html">Contributors</a>
+            <a href="./contests.html">Contest</a>
+            <a href="./blog.html">Blogs</a>
+            <a href="./achievements.html">Achievements</a>
+            <a href="./contactUs.html">Contact Us</a>
           </div>
-          
-          <button id="dark-mode-toggle" class="dark-mode-button">
-            <i class="fas fa-sun"></i>
-            <!-- Sun icon for light mode -->
-            <i class="fas fa-moon"></i>
-            <!-- Moon icon for dark mode -->
-          </button>
         </div>
       </div>
-    </nav>
+      <div class="nav-right">
+        <div class="search-bar">
+          <input type="text" placeholder="Search" />
+          <span><i class="ri-search-line"></i></span>
+        </div>
+        
+        <button id="dark-mode-toggle" class="dark-mode-button">
+          <i class="fas fa-sun"></i>
+          <!-- Sun icon for light mode -->
+          <i class="fas fa-moon"></i>
+          <!-- Moon icon for dark mode -->
+        </button>
+      </div>
+    </div>
+  </nav>
+
     <!-- blog starts -->
     <!-- <div class="blog-section"> -->
-        <div class="container">
-            <div class="all-blog">
-                <div class="blog-container">
-                    <img src="../public/ocdlogo.png" alt="ocdlogo" id="blog-img">
-                        <div id="blog-des">
-                         <h2>OCD Society growing at a fast speed with a large number of Contributors.</h2>
-                         <p>Our society has successfully built a vibrant and dynamic community of over 400 members. These individuals are passionate about solving complex problems in Data Structures and Algorithms (DSA) and Competitive Programming (CP). Our members engage in regular discussions, coding challenges, and collaborative learning sessions, which have significantly enhanced their skills and contributed to our collective success.</p>
-                         <a href="#">Learn More ></a>
-                        </div>
-                </div>
-                <div class="blog-container">
-                    <img src="../public/jspic.jpg" alt="JSpic" id="blog-img">
-    
-                        <div id="blog-des">
-                         <h2>How to Begin coding in Javascript</h2>
-                         <p>Learning to code is both an engrossing and intersting task.Starting your journey into the world of JavaScript is like setting out on an exciting adventure....</p>
-                         <a href="#">Learn More ></a>
-                        </div>
-                </div>
-                <div class="blog-container">
-                    <img src="../public/hackathon.jpg" alt="Hackathon" id="blog-img">
-                        <div id="blog-des">
-                         <h2>Analysis of questions and result of Monthly Hackathon for July.</h2>
-                         <p>The recent hackathon showcased the transformative power in web development, highlighting how these technologies are not only reshaping the creation process but also driving innovation and efficiency. Through an analysis of the questions posed and the projects presented by the winners, several key insights emerge.</p>
-                         <a href="#">Learn More ></a>
-                        </div>
-                </div>
-    
-               
-            
-            </div> 
-            <div class="recent-updates">
-                <h2>Recent Updates</h2>
-                    <li><p id="reflink"><a href="#">Results for the previous Hackathon.</a></p></li>
-                    <li><p id="reflink"><a href="#">Video tutorial for sorting algorithm.</a></p></li>
-            </div>
-        </div>
-        
+  <div class="container">
+      <div class="blogs-container">
+          <div class="blog-container">
+              <div class="remove-blog" title="REMOVE THIS BLOG">
+                <img src="../public/cross.svg" alt="CUT" width="15px" height="15px">
+              </div>
+              <div class="image">
+                <img src="../public/ocdlogo.png" alt="ocdlogo" id="blog-img" width="100%" height="100%">
+              </div>
+              <div id="blog-des">
+                <h2>OCD Society growing at a fast speed with a large number of Contributors.</h2>
+                <p>Our society has successfully built a vibrant and dynamic community of over 400 members. These individuals are passionate about solving complex problems in Data Structures and Algorithms (DSA) and Competitive Programming (CP)...</p>
+              </div>
+              <div class="learn-more" title="GO TO WEBSITE">
+                <a href="../index.html" target="_blank"><button>Learn More ></button></a>
+              </div>
+          </div>
 
-           
-        
-        </div>
-    <script src="../js/index.js"></script>
-</body>
-<footer>
+          <div class="blog-container">
+              <div class="remove-blog" title="REMOVE THIS BLOG">
+                <img src="../public/cross.svg" alt="CUT" width="15px" height="15px">
+              </div>
+              <div class="image">
+                <img src="../public/jspic.jpg" alt="JSpic" id="blog-img" width="100%" height="100%">
+              </div>
+              <div id="blog-des">
+                <h2>How to Begin coding in Javascript</h2>
+                <p>Learning to code is both an engrossing and intersting task.Starting your journey into the world of JavaScript is like setting out on an exciting adventure...</p>
+              </div>
+              <div class="learn-more" title="GO TO WEBSITE">
+                <a href="https://www.freecodecamp.org/news/getting-started-with-javascript/" target="_blank"><button>Learn More ></button></a>
+              </div>
+          </div>
+          
+          <div class="blog-container">
+              <div class="remove-blog" title="REMOVE THIS BLOG">
+                <img src="../public/cross.svg" alt="CUT" width="15px" height="15px">
+              </div>
+              <div class="image">
+                <img src="../public/hackathon.jpg" alt="Hackathon" id="blog-img" width="100%" height="100%">
+              </div>
+              <div id="blog-des">
+                <h2>Analysis of questions and result of Monthly Hackathon for July.</h2>
+                <p>The recent hackathon showcased the transformative power in web development, highlighting how these technologies are not only reshaping the creation process but also driving innovation and efficiency. Through an analysis of the questions posed and the projects presented by the winners, several key insights emerge...</p>
+              </div>
+              <div class="learn-more" title="GO TO WEBSITE">
+                <a href="https://duanboomer.github.io/work/sih-result-analysis/" target="_blank"><button>Learn More ></button></a>
+              </div>
+          </div>
+          <div class="blog-container">
+              <div class="remove-blog" title="REMOVE THIS BLOG">
+                <img src="../public/cross.svg" alt="CUT" width="15px" height="15px">
+              </div>
+              <div class="image">
+                <img src="../public/web-3labs.png" alt="Hackathon" id="blog-img" width="100%" height="100%">
+              </div>
+              <div id="blog-des">
+                <h2>Web3 Labs is a leading blockchain and decentralised infrastructure technology company.</h2>
+                <p>Web3j is a lightweight, highly modular, reactive, type safe Java and Android library for working with smart contracts and integrating with Ethereum blockchains...</p>
+              </div>
+              <div class="learn-more" title="GO TO WEBSITE">
+                <a href="https://www.web3labs.com/?_ga=2.267701198.1744014048.1721739445-1458615325.1721739445" target="_blank"><button>Learn More ></button></a>
+              </div>
+          </div>
+          <div class="blog-container">
+              <div class="remove-blog" title="REMOVE THIS BLOG">
+                <img src="../public/cross.svg" alt="CUT" width="15px" height="15px">
+              </div>
+              <div class="image">
+                <img src="../public/google_ai.jpeg" alt="Hackathon" id="blog-img" width="100%" height="100%">
+              </div>
+              <div id="blog-des">
+                <h2>Making AI helpful for everyone.</h2>
+                <p>We're committed to improving the lives of as many people as possible. And we’ll continue to responsibly build products and platforms – powered by the most advanced technology – for billions of people around the world...</p>
+              </div>
+              <div class="learn-more" title="GO TO WEBSITE">
+                <a href="https://ai.google/" target="_blank"><button>Learn More ></button></a>
+              </div>
+          </div>
+          <div class="blog-container">
+              <div class="remove-blog" title="REMOVE THIS BLOG">
+                <img src="../public/cross.svg" alt="CUT" width="15px" height="15px">
+              </div>
+              <div class="image">
+                <img src="../public/digital-marketing-services.jpg" alt="Hackathon" id="blog-img" width="100%" height="100%">
+              </div>
+              <div id="blog-des">
+                <h2>Achieve Peak Growth with the Leading Digital Marketing Agency in India.</h2>
+                <p>As a leading eCommerce marketing agency in India, we develop unique strategies to build awareness around your products and services. Our effective remarketing strategies for social media and search engines ensure higher conversions...</p>
+              </div>
+              <div class="learn-more" title="GO TO WEBSITE">
+                <a href="https://www.webguru-india.com/digital-marketing-services" target="_blank"><button>Learn More ></button></a>
+              </div>
+          </div>
+      </div> 
+  </div>
+
+  <!-- footer  -->
+  <footer>
     <div class="footer-container">
       <div class="footer-left">
         <a href="index.html" class="footer-logo-link">
@@ -140,4 +189,44 @@
       </div>
     </div>
   </footer>
+<!-- add new blog  -->
+  <div class="add-new-blog">
+    <div class="new-button" title="ADD NEW BLOG">
+      <a href="#">
+        <img src="../public/plus.svg" alt="ADD">
+      </a>
+    </div>
+
+    <div class="new-blog-window" style="display: none;">
+      <div class="close-window">
+        <img src="../public/cross.svg" alt="CUT" width="30px" class="close-window-button">
+      </div>
+      <div class="blog-data">
+        <form action="blogs.php" method="post">
+          <div class="form-group">
+              <label for="heading" style="display: block;"><h2>Heading:</h2></label>
+              <input type="text" id="heading" name="heading" placeholder="maximum 10 words" required>
+          </div>
+          <div class="form-group">
+              <label for="para" style="display: block;"><h2>Describe:</h2></label>
+              <textarea id="para" name="para" rows="6" placeholder="maximum 50 words" required></textarea>
+          </div>
+          <div class="form-group">
+              <label for="link" style="display: block;"><h2>Provide reference link:</h2></label>
+              <input type="text" id="link" name="link" placeholder="(paste link, avoid to type)" required></input>
+          </div>
+          <div class="form-group">
+            <label for="img-link" style="display: block;"><h2>Provide image link:</h2></label>
+            <input type="text" id="img-link" name="img-link" placeholder="(paste link, avoid to type)" required></input>
+        </div>
+          <button type="submit">Add</button>
+      </form>
+      </div>
+    </div>
+  </div>
+  <script>
+  </script>
+</body>
+<script src="../js/index.js"></script>
+<script src="../js/blog.js"></script>
 </html>
