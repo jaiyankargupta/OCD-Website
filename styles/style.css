@@ -73,17 +73,6 @@ nav {
   color: #fff;
   border-radius: 5px;
 }
-
-.nav-text a:visited {
-  color: #333; 
-}
-
-.nav-text a.active {
-  background-color: #333;
-  color: white;
-  border-radius: 5px;
-}
-
 .search-bar {
   width: 100%;
   max-width: 270px;
@@ -181,26 +170,6 @@ body.light-mode  {
 body.dark-mode {
     background-color: #222; 
     color: #ffffff; 
-}
-
-.user-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-}
-
-.user-info-container {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    width: 300px; /* Adjust width as needed */
-    height: 400px; /* Adjust height as needed */
-    border: 1px solid #ddd;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: none; /* Hidden by default */
-    z-index: 1000; /* Ensure it appears above other content */
 }
 
 body.dark-mode .hero-section,
@@ -693,11 +662,6 @@ ul li a:hover {
   text-decoration: underline;
 }
 
-
-
-
-
-
 .footer-bottom {
   text-align: center;
   padding-top: 20px;
@@ -728,7 +692,6 @@ ul li a:hover {
    to {transform: scale(1.2);}
   }
 
- 
 #headingourprogram{
   font-size : 40px;
 }
@@ -752,11 +715,12 @@ ul li a:hover {
 .programs-container a {
   font-weight: 900;
   color: #ffffff;
+  background-color:#0096c7;
+  /* margin-top:0px; */
 }
 .programs-container a:hover {
-  color: #f7f7f7;
-  background-color: #1206eb;
- 
+  border-style: solid;
+  border-color: #ffffff;;
 }
 
 .programs-container h1 {
@@ -777,14 +741,14 @@ ul li a:hover {
     background: #053a62;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 20px 20px 10px 20px;
     flex: 1;
     min-width: 280px;
     max-width: 350px;
     position: relative;
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
-
+    text-align: end;
 }
 
 .program-photo {
@@ -798,6 +762,7 @@ ul li a:hover {
 .program-info {
   text-align: center;
   background-color: #d9e0ff;
+  /* margin-bottom : 0px; */
 }
 
 .program-info h3 {
@@ -808,6 +773,7 @@ ul li a:hover {
 .program-info p {
   font-size: 16px;
   color: #555;
+  padding:5px;
 }
 
 .view-demo {
