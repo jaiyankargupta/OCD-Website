@@ -69,20 +69,20 @@
     </nav>
 
     <!-- Pop-up Section Start -->
-    <div id="popup-banner" class="popup-banner">
-      <span id="close-btn-popup" class="close-btn" onclick="hidepopup()"
-        >✘</span
-      >
-      <p id="h2-of-popup">Welcome to OCD Website !</p>
-      <p>
-        We are currently working on DSA, Competitive Programming, and a 30 Days
-        Java challenge. Join us and enhance your coding skills!
-      </p>
-      button for linking login page
-      <a href="html/join_30DayOfJs.html"
-        ><button id="join-btn-popup">Join</button></a
-      >
-    </div>
+    <div class="fixed bottom-0  right-10 bg-gray-100 border-t border-gray-300 p-4 text-center z-50 md:hidden" id="popup-banner">
+      <span id="close-btn-popup" class="absolute top-2 right-2 cursor-pointer text-xl" onclick="hidepopup()">✘</span>
+      <p id="h2-of-popup" class="text-lg font-bold">Welcome to OCD Website!</p>
+      <p class="mt-2">We are currently working on DSA, Competitive Programming, and a 30 Days Java challenge. Join us and enhance your coding skills!</p>
+      <a href="html/join_30DayOfJs.html">
+          <button id="join-btn-popup" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded">Join</button>
+      </a>
+  </div>
+
+  <script>
+      function hidepopup() {
+          document.getElementById('popup-banner').style.display = 'none';
+      }
+  </script>
     <!-- Pop-up Section end  -->
 
     <!-- Hero Section -->
@@ -535,10 +535,13 @@
         </div>
         
       </div>
-      <div class="ocd-member-link"><p><a href="./html/ocdMembers.html">
-        &lt;click here to get more club members&gt;</a> </p>
-        
-       </div>
+      <div class="ocd-member-link flex justify-center h-5 p-4"></div>
+        <p class="text-center">
+            <a href="./html/ocdMembers.html" class="text-blue-500 hover:underline">
+                &lt;click here to get more club members&gt;
+            </a>
+        </p>
+    </div>
       
     </section>
     
